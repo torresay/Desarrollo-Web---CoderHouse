@@ -224,6 +224,10 @@ figcaption {
     margin-left: 15px;
 }
 
+/*Añado altura de carrousel*/
+.w-95 {
+    width: 95% !important;
+  }
 .calendario {
     background: #f7f7f7;
     flex: 2 1 auto;
