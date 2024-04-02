@@ -1,0 +1,22 @@
+{
+  "name": "coderhouse---desarrollo-web",
+  "version": "1.0.0",
+  "description": "Formula 1 Page - CH Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torresay/Desarrollo-Web-CoderHouse.git"
+  },
+  "author": "Aylen Torres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/torresay/Desarrollo-Web-CoderHouse/issues"
+  },
+  "homepage": "https://github.com/torresay/Desarrollo-Web-CoderHouse#readme",
+  "dependencies": {
+    "sass": "^1.72.0"
+  }
+}

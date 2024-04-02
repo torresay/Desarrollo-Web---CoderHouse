@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+.header{
+    background-color: red;
+    background-position: end;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.menu{
+    background: rgba(0,0,0,.1);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+.logo{
+    flex: 1 1 auto;
+}
+    .logo a{
+        color: #fff;
+        font-size: 30px;
+    }
+    .logo a:hover{
+        color: #343434;
+    }
+    .logo img{
+        max-height: 50px;
+        margin-right: 10px;
+    }
+.nav{
+    flex: 1;               
+}
+.nav a{
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+.nav a:hover{
+    color: #343434;
+}
+.texto-principal{
+    height: 100px;
+    padding: 30px 50px 0; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+h1{
+    /*font-family: 'Lora', serif;*/
+    font-size: 21px;
+    color: #fff;
+}
+.h1{    
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.section{
+    background: #f7f7f7;
+    display: flex;
+    margin-top: 20px;
+}
+.articulos{
+background: #f7f7f7;
+flex: 2 1 auto;
+display: flex;
+flex-flow: row wrap;
+}
+.article{
+flex: 1 1 40%;
+color: #444;
+font-size: 13px;
+letter-spacing: 1px;
+margin: 10px 10px 0 0px;
+flex: 1 1 45%;
+background: #ececec;
+}
+.article img{
+width: 100%;
+}
+.article a{
+color: #fff;
+font-size: 13px;
+padding: 10px;
+background: #000;
+margin: 10px 0;
+display: inline-block;
+}
+.article a:hover{
+background: red;
+}
+h2{
+font-size: 25px;
+text-transform: uppercase;
+padding: 0px 0 10px 0;
+color: black;
+}
+.navegacion{
+background: #000;
+flex: 1 1 100%;
+margin: 10px 10px 0 0px;
+}
+.navegacion a{
+color: #fff;
+font-size: 11px;
+text-transform: uppercase;
+padding: 0 10px;
+letter-spacing: 2px;
+}
+.aside{
+/*background: #f73f52;*/
+flex: 1 1 auto;
+margin: 10px 5px 10px 0;
+}
+.aside img{
+width: 100%;
+}
+.footer{
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+.pie{
+/*background: #e6af2e;*/
+display: flex;
+align-items: center;            
+}
+.pie img{
+max-height: 50px;
+margin-right: 10px;
+}
+.pie a{
+color: #fff;
+font-size: 11px;
+text-transform: uppercase;
+padding: 0 10px;
+letter-spacing: 2px;
+}
+.texto {
+text-align: center;
+}
+
+.texto a {
+color: #fff;
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+.social{
+flex: 1 1 auto; 
+display: flex;               
+}
+.social a{
+    font-size: 18px;
+    color: #fff;
+    padding: 0 5px;
+}
+.social a:hover{
+    color: #343434;
+}
+.section-history  {
+    border-top: 2px solid white; /* Establece un borde de 2 píxeles de ancho y color gris oscuro (#333) */
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+ul {
+    padding: 0;
+    
+}
+
+li {
+    margin-bottom: 10px;
+    list-style-type: disc; /* Tipo de viñeta (puedes usar 'circle', 'square', etc.) */
+    padding-left: 1em; 
+    margin-left: 50px;
+    text-align: justify;
+}
+
+figure{
+    float:right;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin-left: 15px;
+}
+figure img{
+    border-radius: 5px;
+    float: right;
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    margin-left: 15px;
+}
+figcaption {
+    float:right;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+/*Añado altura de carrousel*/
+.w-95 {
+    width: 95% !important;
+  }
+.calendario {
+    background: #f7f7f7;
+    flex: 2 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.calendar {
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto total */
+    flex: 1 1 calc(25% - 20px); /* Calcula el ancho para cuatro cuadrantes por fila, considerando márgenes */
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px;
+    background: #ececec;
+}
+.calendar img {
+    width: 100%;
+}
+
+.calendar a{
+    color: #fff;
+    font-size: 13px;
+    padding: 10px;
+    background: #000;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.article-videos{
+    flex: 1 1 calc(33.33% - 10px);
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+    background: #ececec;
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+    box-sizing: border-box;
+}

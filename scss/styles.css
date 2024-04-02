@@ -8,22 +8,29 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .padre {
   display: flex;
   flex-flow: column nowrap;
 }
-.padre a {
-  text-decoration: none;
+
+.margen-interno {
+  padding: 0 50px;
 }
-.padre .header {
-  background-color: rgb(241, 10, 10);
+
+.header {
+  background-color: red;
   background-position: end;
   background-attachment: contain;
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
 }
-.padre .menu {
+
+.menu {
   background: rgba(0, 0, 0, 0.1);
   display: flex;
   flex-flow: row nowrap;
@@ -31,34 +38,33 @@ body {
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-.padre .margen-interno {
-  padding: 10px 50px;
-}
-.padre .logo {
+
+.logo {
   flex: 1 1 auto;
 }
-.padre .logo a {
+.logo a {
   color: #fff;
   font-size: 30px;
 }
-.padre .logo a:hover {
+.logo a:hover {
   color: #343434;
 }
-.padre .logo img {
+.logo img {
   max-height: 50px;
   margin-right: 10px;
 }
-.padre .nav {
+
+.nav {
   flex: 1;
 }
-.padre .nav a {
+.nav a {
   color: #fff;
   font-size: 11px;
   text-transform: uppercase;
   padding: 0 10px;
   letter-spacing: 2px;
 }
-.padre .nav a:hover {
+.nav a:hover {
   color: #343434;
 }
 
@@ -74,19 +80,8 @@ body {
 h1 {
   font-size: 21px;
   color: #fff;
-}
-
-.h1 {
-  color: #fff;
   font-weight: bold;
   line-height: 1.6;
-}
-
-h2 {
-  font-size: 25px;
-  text-transform: uppercase;
-  padding: 0px 0 10px 0;
-  color: black;
 }
 
 .section {
@@ -122,7 +117,14 @@ h2 {
   display: inline-block;
 }
 .article a:hover {
-  color: rgb(241, 10, 10);
+  color: red;
+}
+
+h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 0px 0 10px 0;
+  color: black;
 }
 
 .navegacion {
@@ -216,7 +218,8 @@ figure {
   float: right;
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 15px;
 }
 figure img {
@@ -224,7 +227,8 @@ figure img {
   float: right;
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 15px;
 }
 
@@ -232,7 +236,8 @@ figcaption {
   float: right;
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 15px;
 }
 
@@ -278,7 +283,7 @@ figcaption {
   margin: 10px 10px 0 0px;
   background: #ececec;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alinea el contenido en columna */
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
