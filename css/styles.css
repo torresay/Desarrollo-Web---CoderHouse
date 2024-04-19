@@ -61,6 +61,9 @@ body {
 .padre .nav a:hover {
   color: #343434;
 }
+.padre .nav li {
+  list-style: none;
+}
 
 .texto-principal {
   height: 100px;
