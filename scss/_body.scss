@@ -107,16 +107,3 @@ figcaption {
     @include width(95%);
   }
 
-.article-videos{
-    flex: 1 1 calc(33.33% - 10px);
-    color: #444;
-    @include font-size(13px);
-    letter-spacing: 1px;
-    margin: 10px 10px 0 0px;
-    background: $blanco-secundario;
-    @extend %display-flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
