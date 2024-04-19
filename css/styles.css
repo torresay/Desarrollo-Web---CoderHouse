@@ -65,6 +65,10 @@ body {
   list-style: none;
 }
 
+.h1, h1 {
+  color: #fff;
+}
+
 .texto-principal {
   height: 100px;
   padding: 30px 50px 0;
@@ -76,11 +80,9 @@ body {
 
 h1 {
   font-size: 21px;
-  color: #fff;
 }
 
 .h1 {
-  color: #fff;
   font-weight: bold;
   line-height: 1.6;
 }
@@ -92,40 +94,8 @@ h2 {
   color: black;
 }
 
-.section {
-  background: #f7f7f7;
+.article-videos, .social {
   display: flex;
-  margin-top: 20px;
-}
-
-.articulos {
-  background: #f7f7f7;
-  flex: 2 1 auto;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.article {
-  flex: 1 1 45%; /* Se mantiene la segunda definición */
-  color: #444;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin: 10px 10px 0 0px;
-  background: #ececec;
-}
-.article img {
-  width: 100%;
-}
-.article a {
-  color: #fff;
-  font-size: 13px;
-  padding: 10px;
-  background: #000;
-  margin: 10px 0;
-  display: inline-block;
-}
-.article a:hover {
-  color: rgb(241, 10, 10);
 }
 
 .navegacion {
@@ -149,30 +119,6 @@ h2 {
   width: 100%;
 }
 
-.footer {
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.pie {
-  display: flex;
-  align-items: center;
-}
-.pie img {
-  max-height: 50px;
-  margin-right: 10px;
-}
-.pie a {
-  color: #fff;
-  font-size: 11px;
-  text-transform: uppercase;
-  padding: 0 10px;
-  letter-spacing: 2px;
-}
-
 .texto {
   text-align: center;
 }
@@ -185,7 +131,6 @@ h2 {
 
 .social {
   flex: 1 1 auto;
-  display: flex;
 }
 .social a {
   font-size: 18px;
@@ -197,7 +142,7 @@ h2 {
 }
 
 .section-history {
-  border-top: 2px solid white; /* Establece un borde de 2 píxeles de ancho y color gris oscuro (#333) */
+  border-top: 2px solid #f7f7f7; /* Establece un borde de 2 píxeles de ancho y color gris oscuro (#333) */
   padding-top: 20px;
   margin-bottom: 20px;
   text-align: justify;
@@ -241,7 +186,80 @@ figcaption {
 
 /*Añado altura de carrousel*/
 .w-95 {
-  width: 95% !important;
+  width: 95%;
+}
+
+.article-videos {
+  flex: 1 1 calc(33.33% - 10px);
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 10px 0 0px;
+  background: #ececec;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.section {
+  background: #f7f7f7;
+  display: flex;
+  margin-top: 20px;
+}
+
+.articulos {
+  background: #f7f7f7;
+  flex: 2 1 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.article {
+  flex: 1 1 45%; /* Se mantiene la segunda definición */
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 10px 0 0px;
+  background: #ececec;
+}
+.article img {
+  width: 100%;
+}
+.article a {
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
+  background: #000;
+  margin: 10px 0;
+  display: inline-block;
+}
+.article a:hover {
+  color: rgb(241, 10, 10);
+}
+
+.footer {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pie {
+  display: flex;
+  align-items: center;
+}
+.pie img {
+  max-height: 50px;
+  margin-right: 10px;
+}
+.pie a {
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
 }
 
 .calendario {
@@ -268,21 +286,7 @@ figcaption {
   color: #fff;
   font-size: 13px;
   padding: 10px;
-  background: #000;
+  background: black;
   margin: 10px 0;
   display: inline-block;
-}
-
-.article-videos {
-  flex: 1 1 calc(33.33% - 10px);
-  color: #444;
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin: 10px 10px 0 0px;
-  background: #ececec;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
 }/*# sourceMappingURL=styles.css.map */

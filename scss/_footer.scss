@@ -1,0 +1,24 @@
+.footer{
+    background: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.pie{
+    display: flex;
+    align-items: center; 
+    
+    img {
+        max-height: 50px;
+        margin-right: 10px;
+    }
+
+    a{
+        color: $blanco-principal;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+}

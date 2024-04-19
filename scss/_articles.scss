@@ -1,0 +1,42 @@
+@mixin margin-top($margin-top){
+    margin-top: $margin-top;
+}
+
+.section{
+    background: $blanco-background;
+    display: flex;
+    @include margin-top(20px);
+}
+
+.articulos{
+    background: $blanco-background;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article {
+    flex: 1 1 45%; /* Se mantiene la segunda definición */
+  
+    color: #444;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+    background: $blanco-secundario;
+  
+    img {
+      width: 100%;
+    }
+  
+    a {
+      color: $blanco-principal;
+      font-size: 13px;
+      padding: 10px;
+      background: #000;
+      margin: 10px 0;
+      display: inline-block;
+  
+      &:hover {
+        color: $rojo-principal;
+      }
+    }
+}
